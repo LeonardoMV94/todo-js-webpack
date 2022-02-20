@@ -8,7 +8,7 @@ Este es una aplicacion escrita en javascript como ejercicio
 Recuerden reconstruir los modulos de Node
 
 ```
-npm intall
+npm install
 ```
 
 Y para construir el build:
