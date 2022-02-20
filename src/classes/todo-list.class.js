@@ -8,7 +8,7 @@ export class TodoList {
         this.cargarLocalStorage();
     }
 
-    countTodos(){
+    getCountTodos(){
         return this.todos.length;
     }
 

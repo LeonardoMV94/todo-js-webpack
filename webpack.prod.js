@@ -3,13 +3,15 @@ const MiniCssExtract = require("mini-css-extract-plugin");
 const CopyPlugin     = require("copy-webpack-plugin");
 const CssMinimizer   = require('css-minimizer-webpack-plugin');
 const Terser         = require('terser-webpack-plugin');
+const path           = require('path');
 
 module.exports = {
     mode: "production",
 
     output: {
         clean: true,
-        filename: 'main.[contenthash].js'
+        path: path.resolve(__dirname, 'docs'),
+        filename: 'main.[contenthash].js',        
     },
     module:{
         rules:[
